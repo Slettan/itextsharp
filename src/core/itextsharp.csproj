@@ -111,6 +111,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Security" />
@@ -1177,6 +1180,7 @@
     <EmbeddedResource Include="iTextSharp\text\pdf\fonts\Times-Italic.afm" />
     <EmbeddedResource Include="iTextSharp\text\pdf\fonts\Times-Roman.afm" />
     <EmbeddedResource Include="iTextSharp\text\pdf\fonts\ZapfDingbats.afm" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="iTextSharp\awt\geom\AffineTransform.cs" />
