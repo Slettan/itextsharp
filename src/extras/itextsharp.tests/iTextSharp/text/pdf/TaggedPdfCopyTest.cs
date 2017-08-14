@@ -917,13 +917,18 @@ namespace itextsharp.tests.text.pdf
         }
 
         [Test]
-        [ExpectedException(typeof (BadPdfFormatException))]
+    //    [ExpectedException(typeof (BadPdfFormatException))]
         public void CopyTaggedPdf24() {
-            InitializeDocument("24");
-            PdfReader reader1 = new PdfReader(SOURCE24);
-            copy.AddPage(copy.GetImportedPage(reader1, 17, true));
-            document.Close();
-            reader1.Close();
+            void Run()
+            {
+                InitializeDocument("24");
+                PdfReader reader1 = new PdfReader(SOURCE24);
+                copy.AddPage(copy.GetImportedPage(reader1, 17, true));
+                document.Close();
+                reader1.Close();
+            }
+
+            Assert.Throws(typeof(BadPdfFormatException), Run);
         }
 
         [Test]

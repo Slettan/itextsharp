@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>iTextSharp-BouncyCastle</id>
+    <version>5.5.11</version>
+	<title>iTextSharp, Bouncy Castle</title>
+    <authors>Bruno Lowagie, Paulo Soares</authors>
+    <projectUrl>https://github.com/Slettan/itextsharp-BouncyCastle</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fork of iTextSharp 5.5.11 that includes Bouncy Castle as a NuGet package instead of directly including the source code.</description>
+    <releaseNotes>Updated to reference Bouncy Castle as a NuGet package instead of directly including the source code.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>pdf itext itextsharp</tags>
+    <dependencies>
+      <dependency id="BouncyCastle" version="1.8.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\itextsharp.dll" target="lib" />
+  </files>
+</package>
